@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "Our.Umbraco.Analyzers.Vsix": {
+      "commandName": "Project"
+    }
+  }
+}
