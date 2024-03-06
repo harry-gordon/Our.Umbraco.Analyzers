@@ -10,24 +10,32 @@
   <PropertyGroup>
     <PackageId>Our.Umbraco.Analyzers</PackageId>
     <PackageVersion>1.0.0.0</PackageVersion>
-    <Authors>harry</Authors>
+    <Authors>Harry Gordon</Authors>
     <PackageLicenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</PackageLicenseUrl>
-    <PackageProjectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/harry-gordon/Our.Umbraco.Analyzers/</PackageProjectUrl>
     <PackageIconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</PackageIconUrl>
-    <RepositoryUrl>http://REPOSITORY_URL_HERE_OR_DELETE_THIS_LINE</RepositoryUrl>
+    <RepositoryUrl>https://github.com/harry-gordon/Our.Umbraco.Analyzers/</RepositoryUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Description>Our.Umbraco.Analyzers</Description>
+    <Description>A collection of analyzers intended to highlight possible issues in modern Umbraco projects.</Description>
     <PackageReleaseNotes>Summary of changes made in this release of the package.</PackageReleaseNotes>
-    <Copyright>Copyright</Copyright>
-    <PackageTags>Our.Umbraco.Analyzers, analyzers</PackageTags>
+    <Copyright></Copyright>
+    <PackageTags>Our.Umbraco.Analyzers, analyzers, Umbraco</PackageTags>
     <DevelopmentDependency>true</DevelopmentDependency>
     <NoPackageAnalysis>true</NoPackageAnalysis>
 
     <TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);_AddAnalyzersToOutput</TargetsForTfmSpecificContentInPackage>
+
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Our.Umbraco.Analyzers.CodeFixes\Our.Umbraco.Analyzers.CodeFixes.csproj" />
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Our.Umbraco.Analyzers\Our.Umbraco.Analyzers.csproj" />
   </ItemGroup>
 

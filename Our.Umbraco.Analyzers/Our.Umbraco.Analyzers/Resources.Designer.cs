@@ -61,33 +61,6 @@ namespace Our.Umbraco.Analyzers {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Type names should be all uppercase..
-        /// </summary>
-        internal static string LowerCaseAnalyzerDescription {
-            get {
-                return ResourceManager.GetString("LowerCaseAnalyzerDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Type name &apos;{0}&apos; contains lowercase letters.
-        /// </summary>
-        internal static string LowerCaseAnalyzerMessageFormat {
-            get {
-                return ResourceManager.GetString("LowerCaseAnalyzerMessageFormat", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Type name contains lowercase letters.
-        /// </summary>
-        internal static string LowerCaseAnalyzerTitle {
-            get {
-                return ResourceManager.GetString("LowerCaseAnalyzerTitle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to All Umbraco context calls should include the using keyword.
         /// </summary>
         internal static string MissingUsingStatementAnalyzerDescription {

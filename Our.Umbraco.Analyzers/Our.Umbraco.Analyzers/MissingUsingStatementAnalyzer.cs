@@ -1,10 +1,8 @@
 ﻿using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.Diagnostics;
 using System.Collections.Immutable;
 using System.Linq;
-using System.Net.Http.Headers;
 
 namespace Our.Umbraco.Analyzers
 {
@@ -41,6 +39,7 @@ namespace Our.Umbraco.Analyzers
             );
 
             var summary = declarations.Select(n => $"{n.Kind()}: {n}").ToArray();
+
             foreach (var declaration in declarations)
             {
                 var text = declaration.GetText().ToString().Trim();
