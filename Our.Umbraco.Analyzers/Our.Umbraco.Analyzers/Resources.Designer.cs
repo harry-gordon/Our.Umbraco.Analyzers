@@ -88,6 +88,33 @@ namespace Our.Umbraco.Analyzers {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to All Umbraco context calls should include the using keyword.
+        /// </summary>
+        internal static string MissingUsingStatementAnalyzerDescription {
+            get {
+                return ResourceManager.GetString("MissingUsingStatementAnalyzerDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} called without using keyword.
+        /// </summary>
+        internal static string MissingUsingStatementAnalyzerMessageFormat {
+            get {
+                return ResourceManager.GetString("MissingUsingStatementAnalyzerMessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Missing using keyword.
+        /// </summary>
+        internal static string MissingUsingStatementAnalyzerTitle {
+            get {
+                return ResourceManager.GetString("MissingUsingStatementAnalyzerTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Content models should be stateless.
         /// </summary>
         internal static string StatefulContentModelAnalyzerDescription {
@@ -106,7 +133,7 @@ namespace Our.Umbraco.Analyzers {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Content model is stateful (contains setters).
+        ///   Looks up a localized string similar to Stateful content model.
         /// </summary>
         internal static string StatefulContentModelAnalyzerTitle {
             get {

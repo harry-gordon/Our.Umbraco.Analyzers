@@ -117,7 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-
   <data name="LowerCaseAnalyzerDescription" xml:space="preserve">
     <value>Type names should be all uppercase.</value>
     <comment>An optional longer localizable description of the diagnostic.</comment>
@@ -130,7 +129,18 @@
     <value>Type name contains lowercase letters</value>
     <comment>The title of the diagnostic.</comment>
   </data>
-
+  <data name="MissingUsingStatementAnalyzerDescription" xml:space="preserve">
+    <value>All Umbraco context calls should include the using keyword</value>
+    <comment>An optional longer localizable description of the diagnostic.</comment>
+  </data>
+  <data name="MissingUsingStatementAnalyzerMessageFormat" xml:space="preserve">
+    <value>{0} called without using keyword</value>
+    <comment>The format-able message the diagnostic displays.</comment>
+  </data>
+  <data name="MissingUsingStatementAnalyzerTitle" xml:space="preserve">
+    <value>Missing using keyword</value>
+    <comment>The title of the diagnostic.</comment>
+  </data>
   <data name="StatefulContentModelAnalyzerDescription" xml:space="preserve">
     <value>Content models should be stateless</value>
     <comment>An optional longer localizable description of the diagnostic.</comment>
@@ -140,7 +150,7 @@
     <comment>The format-able message the diagnostic displays.</comment>
   </data>
   <data name="StatefulContentModelAnalyzerTitle" xml:space="preserve">
-    <value>Content model is stateful (contains setters)</value>
+    <value>Stateful content model</value>
     <comment>The title of the diagnostic.</comment>
   </data>
 </root>
